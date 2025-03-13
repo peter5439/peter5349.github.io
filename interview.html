@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Single Webpage CV
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js" defer></script>
+    <style>
+        *,*::before,*::after{box-sizing: border-box;}
+        body{
+            margin: 0px;
+            background-color: #5d4037;height: 100%;
+        }
+        .carousel{
+            width: 100%;
+            height: 150vh;
+            position: relative;
+        }
+        .slide{
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+
+        }
+        .slide[data-active]{
+            opacity:1;
+        }
+        .slide img{
+            display: block;
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .carousel button{
+            position: absolute;
+            background: none;
+            border: none;
+            font-size: 4rem;
+            top:50%;
+            z-index: 2;
+            transform:translateY(-50%);
+            color: rgba(255, 255, 255,.5);
+            cursor: pointer;
+            border-radius: .25rem;
+            padding: 0 .5rem;
+            background-color:rgba(0, 0, 0,.1) ;
+
+        }
+        .carousel-button:hover,
+        .carousel-button:focus{
+            color: white;
+            background-color: rgba(0, 0, 0,.2);
+        }
+        .carousel-button.prev{
+            left: 1rem;
+
+        }
+        .carousel-button.next{
+            right: 1rem;
+
+        }
+
+        .carousel ul{
+            margin: 0px;
+            padding: 0px;
+            list-style:none;
+        }
+        div {
+            background-color:#Efebe9 ;
+            padding :5px;
+            margin-bottom: 50px;
+        }
+        h1{color: #d7ccc8;
+        text-align: center;}
+        h2{
+            color: #281917;
+            text-align: center;
+        }
+        .navigation ul {
+        
+            background-color:#281917 ;
+            padding:auto;
+            margin:0px;
+            overflow: hidden;
+
+        }
+        .navigation a{
+            text-decoration: none;
+            color:white;
+            padding:15px;
+            display:block;
+            text-align:center;
+        }
+        .navigation a:hover{
+            background-color: black;
+
+        }
+        ul{
+            list-style-type: none;
+        }
+        .navigation li{
+            float: left;
+        }
+    </style>
+
+
+</head>
+<body Class="body"  >
+
+<nav class="navigation">
+    <ul>
+        <li><A href="#prof">Professional profile</A></li>
+        <li><A href="#core">Core skills</A></li>
+        <li><A href="#exp">Experience</A></li>
+        <li><A href="#edu">Education</A></li>
+        <li><A href="#ref">Referees</A></li>
+        
+    </ul>
+</nav>
+<H1>CHIDOLUE CHUKWUEBUKA PETER</H1>
+
+    <div >
+    <h2>Contact</h2>
+    <P>Phone Numbers: +234(0)8105071039, +234(0)8081444664</P>
+    <P>Email: chidolueebuka0@gmail.com</P>
+    <P>Location: Abuja, Nigeria</P>
+    </div>
+    
+    
+    <div> <H2 ID="prof">Professional profile</H2>
+    
+        <P>I am a 400 Level Computer Engineering student with strong work ethic and a commitment to excellence. I have a proven track record of success in challenging environment.
+             I am seeking opportunities to apply my skills and knowledge in a professional setting. I am eager to learn and committed to making a positive impact in any organization that I join.</P>
+        </div>
+
+    <Div>
+        <h2 id="core">Core Skills</H2>
+            <ul style="list-style-type: disc;">
+                <li>Microsoft Excel</li>
+                <li>Critical thinking skill</li>
+                <li>Analytical skill</li>
+                <li>Graphics design</li>
+                <li>Frontend web design using HTML CSS and Bootstrap </li>
+                <li>3D design and printing using Fusion</li>
+            </ul>
+    </Div>
+    	
+    
+    <div><h2 id="exp">Experience</h2> 
+                   
+        <P><B>07/2023 - 08/2023</B> I completed a two-month internship at Namek Solution LTD, where I gained hands-on experience with HTML, CSS, JavaScript, and Bootstrap. During this time, I successfully translated assigned Figma designs into fully functional web pages.</P>
+        
+        <P><b>01/07/2024 – 30/09/2024</b> I completed a three-month internship at FutureFit Innovation Lab, where I gained experience in 3D design and embedded system development. During this period, I designed 3D models for printing and created a casing for a solar charge controller. For my final project, I collaborated with a colleague to develop a water level detection device.</P></div>
+    
+    <div><H2 id="edu">Education</H2>
+    
+        <P><b>2021 - Present</b> 400 level Computer Engineering student at Veritas university - Bwari, Abuja, Nigeria </P>
+        
+        <P><b>2015 - 2021 </b> West African Senior School Certificate (WASSC)
+            Christ the king collage - Gwagwalada, Abuja, Nigeria</P></div>
+    
+    
+    <div><H2 id="ref">Referees</H2>
+    
+        <UL>
+            <LI>Engr. Dr Obinna Ugwu</LI>
+            <LI>SIWES coordinator</LI>
+            <LI>Department of Computer Engineering</LI>
+            <LI>Phone Number: +2348068474572</LI>
+        </UL>
+        
+        <UL>
+            <LI>Engr. Dr Rotanna Ovid</LI>
+            <LI>SIWES coordinator</LI>
+            <LI>Department of Computer Engineering</LI>
+            <LI>Phone Number: +2348055110031</LI>
+        </UL>
+        </div>
+    
+        <Section aria-label="photos">
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#8656</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8658</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="C:\Users\HP\Desktop\interview\img1.jpg" alt="image1">
+                    </li>
+                    <li class="slide">
+                        <img src="C:\Users\HP\Desktop\interview\img2.jpg" alt="image2">
+                    </li>
+                    <li class="slide">
+                        <img src="C:\Users\HP\Desktop\interview\img3.jpg" alt="image3">
+                    </li>
+                    <li class="slide">
+                        <img src="C:\Users\HP\Desktop\interview\ing4.jpg" alt="image4">
+                    </li>
+                    <li class="slide">
+                        <img src="C:\Users\HP\Desktop\interview\img5.jpg" alt="image5">
+                    </li>
+                </ul>
+            </div>
+
+        </Section>
+
+    
+
+
+</body>
+</html>
